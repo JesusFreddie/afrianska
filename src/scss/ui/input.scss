@@ -1,0 +1,17 @@
+.input {
+	border: 1px solid #356ead;
+	border-radius: 10px;
+	opacity: 0.4;
+
+	max-width: 100%;
+	max-height: 300px;
+
+	padding: 21px 42px;
+
+	@media (max-width: 443px) {
+		padding: 16px 32px;
+	}
+	@media (max-height: 950px) {
+		max-height: 200px;
+	}
+}

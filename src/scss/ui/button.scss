@@ -1,0 +1,19 @@
+.button {
+	padding: 15px 48px;
+	border-radius: 10px;
+	background-color: var(--button-bg-color);
+
+	font-size: 16px;
+	color: var(--color-white);
+
+	box-shadow: 5px 10px 20px 0 rgba(53, 110, 173, 0.2);
+
+	transition: opacity .1s ease-in-out;
+
+	@media (hover: hover) {
+		&:hover {
+			opacity: .8;
+		}
+	}
+}
+
