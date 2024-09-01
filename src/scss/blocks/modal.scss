@@ -1,0 +1,113 @@
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 9;
+	
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	&__title {
+		margin-bottom: 48px;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 150%;
+		letter-spacing: 0.04em;
+		color: #1f3f68;
+	}
+
+	&__form {
+		position: fixed;
+		z-index: inherit;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		width: 540px;
+		min-height: 500px;
+		padding: 56px;
+
+		display: flex;
+		flex-direction: column;
+
+		box-shadow: 5px 10px 50px 0 rgba(16, 112, 177, 0.2);
+		background-color: var(--color-white);
+		border-radius: 10px;
+
+		@media (max-width: 624px) {
+			width: 100%;
+		}
+
+		label {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 187%;
+			letter-spacing: 0.04em;
+			color: #1f3f68;
+			margin-bottom: 8px;
+		}
+
+		input {
+			margin-bottom: 32px;
+		}
+
+		.button {
+			margin-top: 72px;
+		}
+	}
+
+	&::after {
+		position: absolute;
+		display: block;
+		content: '';
+		width: 100vw;
+		height: 100vh;
+		background-color: rgba(#ddd, .5);
+	}
+
+	&--open {
+		display: block;
+	}
+
+	#modal__error-form-message {
+		text-align: center;
+		padding-top: 10px;
+		color: #e33a2b;
+	}
+
+	&__close {
+		position: absolute;
+		top: 25px;
+		right: 25px;
+	}
+
+
+	
+}
+
+.success-from-popap {
+	opacity: 0;
+	visibility: hidden;
+
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+
+	text-align: center;
+	padding: 10px 15px;
+	font-weight: 500;
+	font-size: 20px;
+
+	background-color: var(--color-white);
+	border-radius: 10px;
+
+	z-index: 9;
+	transition: .2s ease-in-out;
+
+	&--open {
+		opacity: 1;
+		visibility: visible;
+	}
+
+}

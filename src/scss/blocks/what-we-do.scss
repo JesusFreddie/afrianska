@@ -1,0 +1,22 @@
+.what-we-do {
+	padding-top: 180px;
+	padding-bottom: 212px;
+	position: relative;
+
+	&__title {
+		position: absolute;
+
+		max-width: 360px;
+
+		font-weight: 600;
+		font-size: 36px;
+		line-height: 128%;
+		letter-spacing: 0.05em;
+		color: #316099;
+		margin-bottom: 100px;
+		@media (max-width: 738px) {
+			position: static;
+			font-size: 20px;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.nav__button-menu {
+	width: 32px;
+	height: 32px;
+	padding: 8px 4px;
+
+	&_block {
+		background-color: #356ead;
+		height: 3px;
+		width: 100%;
+		display: block;
+		position: relative;
+
+		&::after,
+		&::before {
+			display: block;
+			position: absolute;
+			content: '';
+			width: inherit;
+			height: inherit;
+			background-color: inherit;
+		}
+
+		&::after {
+			top: -6px;
+		}
+
+		&::before {
+			bottom: -6px;
+		}
+	}
+}

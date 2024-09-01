@@ -1,0 +1,99 @@
+.projects {
+  padding-top: 96px;
+  padding-bottom: 125px;
+
+  &__text {
+    display: flex;
+    gap: 97px;
+    margin-bottom: 111px;
+    @media (max-width: 900px) {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 128%;
+    letter-spacing: 0.05em;
+    color: var(--color-white);
+    @media (max-width: 507px) {
+      font-size: 20px;
+    }
+  }
+
+  p {
+    color: var(--color-white);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+    max-width: 540px;
+    @media (max-width: 507px) {
+      font-size: 16px;
+    }
+  }
+
+  &__item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 41px 43px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 230%;
+    letter-spacing: 0.02em;
+    color: #f2f2f2;
+
+    transition: background-color 0.1s ease-in-out;
+    @media (hover: hover) {
+			&:hover {
+				background-color: rgba(#1f3f68, 0.2);
+			}
+		}
+  }
+
+  &__table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  &__item {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 0px;
+    text-align: center;
+  }
+
+  &__item:first-child {
+    border-left: none;
+  }
+
+  &__item:last-child {
+    border-right: none;
+  }
+
+  &__table tr:first-child td {
+    border-top: none;
+  }
+
+  &__table tr:last-child td {
+    border-bottom: none;
+  }
+
+  @media (max-width: 768px) {
+    .projects__table tr td {
+      display: block;
+      width: 100%;
+			border: none;
+			border-bottom: 1px solid var(--color-white);
+    }
+		
+    .projects__table tr td:first-child {
+      border-top: none; /* Убираем верхнюю границу у первого элемента */
+    }
+  }
+}
